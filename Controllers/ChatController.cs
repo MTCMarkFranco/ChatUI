@@ -38,7 +38,7 @@ namespace ChatApp.Controllers
 
                     try        
                     {
-                        var response = await client.PostAsync("https://localhost:7000/api/PdfProcess", formData);
+                        var response = await client.PostAsync("http://localhost:5058/api/PdfProcess", formData);
 
                         if (response.IsSuccessStatusCode)
                         {
